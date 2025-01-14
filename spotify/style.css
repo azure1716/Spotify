@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+body{
+    background-color: black;
+}
+.nav{
+    justify-content: space-between;
+    height:60px;
+    
+}
+.logo{
+    margin-left: 20px;
+}
+.nav-centre{
+    gap:10px;  
+    /* margin-left: ;  */
+}
+.nav-centre img{
+    /* height: 30px; */
+    align-self: center;
+    
+}
+.home-box{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: 300ms;
+}
+.search-box{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: 300ms;
+    display:none;
+}
+.home-box:hover{
+    background-color :rgb(58, 58, 58);
+
+}
+.search-box:hover{
+    background-color :rgb(58, 58, 58);
+
+}
+.home-icon{
+    margin:11px;
+}
+.search-icon{
+    margin:11px;
+}
+.search{
+    border-radius: 50px;
+    border: none;
+    width:500px;
+    padding-left: 30px;
+    height: 45px;
+    font-size: 17px;
+    font-family: poppins;
+    color: white;
+    transition: 300ms;
+    
+}
+.search:hover{
+    background-color :rgb(58, 58, 58);
+
+}
+.search::placeholder{
+    color: rgb(199, 193, 193);
+}
+.nav-items{
+    margin: 3px 20px;
+}
+.profile{
+    width:45px;
+    background-color: rgb(228, 102, 59);
+    height: 45px;
+    border-radius: 50%;
+    border:7px solid rgb(35, 35, 35);
+    font-family: poppins;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+    padding-left: 3px;
+    transition: 300ms;
+}
+.profile:hover{
+    border:7px solid rgb(59, 58, 58);
+}
+.nav-right{
+    margin: 0 10px;
+    gap:20px;
+}
+.bell{
+    position: absolute;
+    right:65px;
+}
+
+.library{
+    width:22vw;
+    height: 83vh;
+    margin:8px;
+    margin-top: 0px;
+    border-radius: 8px;
+    min-width: 300px;
+    padding:20px;   
+    z-index: 1;
+    transition: 300ms;
+    /* border: 2px solid red; */
+}
+.lib-head{
+    color:#b3b3b3;
+    font-weight: bold;
+    font-family: poppins;
+    border-radius: 8px;
+    gap:10px;
+    padding:20px;   
+}
+.close{
+    display: none;
+}
+.right{
+    width: 80vw;
+    max-height: 83vh;
+    margin:8px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 8px;
+    
+    
+    
+}
+.right-head{
+    color:#f9efef;
+    font-family: poppins;
+    padding-top:23px;
+    padding-left: 45px;
+}
+.hamburger{
+    display: none;
+}
+.card-holder{
+    padding-top: 30px;
+    /* justify-content: center; */
+    max-height: 75vh;
+    padding-left: 120px;
+    flex-wrap: wrap;
+    gap:60px;
+    row-gap: 40px;
+    overflow-Y: auto;
+}
+.card{
+    color: rgb(255, 255, 255);
+    /* border:2px solid red; */
+    /* height: 293px; */
+    width: 195px;
+    /* margin:auto; */
+    padding: 10px;
+    /* padding-bottom: 20px; */
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: rgb(34, 33, 33);
+    transition-duration:300ms  ;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+
+}
+.card p{
+    color: #b3b3b3;
+}
+.card:hover{
+    background-color :rgb(58, 58, 58);
+}
+.song-list ul{
+    color: white;
+    list-style: none;
+    
+}
+.song-list ul li{
+    color: white;
+    margin:20px 0;
+    border: 2px solid rgb(117, 117, 117);
+    padding:15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.song-list ul li:hover{
+    background-color :rgb(58, 58, 58);
+
+}
+.player img{
+    width:30px;
+}
+.player{
+    z-index: 2;
+}
+.player-info{
+    justify-content: space-between;
+    padding: 10px 40px;
+
+
+}
+.player-btns{
+    gap:30px;
+}
+.song-card img{
+    width: 18px;
+}
+.song-card{
+    justify-content: space-between;
+    font-family: poppins;
+    font-size: 15px;
+}
+.player-left,.player-right{
+    width: 40%;
+}
+.player-left , .curr-time,.duration{
+    color: white;
+    /* background-color: wheat; */
+    
+    font-family: poppins;
+}
+.player-right{
+    justify-content: end;
+    gap:10px;
+}
+.range{
+    accent-color:rgb(91, 91, 91)
+
+}
+.player-bottom{
+    width:50%;
+    margin: auto;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.seekbar{
+    width:90%;
+    background-color: white;
+    height: 4px;
+    margin: auto;
+    position: relative;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: wheat;
+    position: absolute;
+    bottom: -5px;
+    left:0px;
+    transition: 0.5s;
+
+}
+
+@media (max-width:1100px){
+    .library{
+        position: absolute;
+        left:-100%;
+        
+    }
+    .right{
+        width:100vw;
+        height: 83vh;
+    }
+    .search{
+        display: none;
+    }
+    .search-box{
+        display: block;
+    }
+    .right-head{
+        text-align: center;
+        padding-left: 0;
+    }
+    .card{
+        margin:auto; 
+    }
+    .card-holder{
+        padding: 0;
+        padding-top: 30px;
+        padding-left: 0px;
+        column-gap: 4px;
+        row-gap:30px;
+
+    }
+    .player{
+        padding:10px;
+        border-radius: 10px;
+        position: fixed;
+        width:100vw;
+        margin:auto;
+        bottom:10px;
+          
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: 93px;
+}
+    
+    .close{
+        display: block;
+        position: absolute;
+        right:30px;
+    }
+    .right{
+        margin-left: 8px;
+    }
+    
+}
+
+@media (max-width:500px){
+    .card{
+        width: 80vw;
+        /* height: 49vh; */
+        margin: auto;
+    }
+    .vol{
+        /* display: none; */
+    }
+    .player-right{
+        /* display: none; */
+        width: 100%; 
+        justify-content: center;
+    }
+    .player-info{
+        padding: 0;
+        padding-bottom: 10px;
+        gap:3px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .player{
+        justify-content: space-between;
+        
+        /* height: 100px; */
+        
+    }
+    .player-left{
+        /* padding-left: 20px; */
+        width:80%;
+        text-align: center;
+    }
+    .player-bottom{
+        width: 80%;
+        gap:20px;
+    }
+    .card-holder{
+        height: calc(100vh - 250px);
+    }
+    
+    
+}

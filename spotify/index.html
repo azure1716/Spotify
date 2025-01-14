@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <nav class="nav  flex align  bg-black">
+        <div class="logo nav-items "><img class="invert" src=assets\images\logo.svg></div>
+
+        <div class="nav-centre nav-items flex">
+            <div class=" home-box bg-grey pointer">
+                <img class=" home-icon invert " height="23px" src="assets/images/home.svg">
+            </div>
+            <div class="search-box bg-grey">
+                <img class="invert search-icon " height="23px" src="assets/images/search-icon.svg">
+            </div>
+            <input class="search bg-grey" type="text" placeholder="What do you want to play?">
+        </div>
+
+        <div class="nav-right nav-items flex align">
+            <img class=" bell invert align pointer"  height="20px" src="assets/images/bell.svg">
+            <div class="profile pointer">H</div>
+        </div>
+    </nav>
+    <main class="flex">
+        <div class="library bg-grey2">
+            <div class="lib-head bg-grey2 flex ">
+                <img class="close invert" height="25px" src="assets/images/close.svg">
+                <img class="invert" height="25px" src="assets/images/lib-icon.svg">
+                Your Library
+            </div>
+            <div class="song-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="right bg-grey2">
+            <div class="right-head">
+                <img height="28px" class="hamburger invert pointer" src="assets/images/hamburger.svg">
+                <h1>Spotify Playlists</h1>
+            </div>
+            <div class="card-holder flex">
+               
+                
+            </div>
+            
+        </div>
+    </main> 
+    <div class="player bg-black">
+        <div class="player-info flex">
+            <div class="player-left"></div>
+            <div class="player-btns flex">
+                <img id="prev" class="invert pointer" src="assets/images/previous.svg">
+                <img id="play" class="play invert pointer" src="assets/images/play.svg">
+                <img id="next" class="invert pointer" src="assets/images/next.svg">
+            </div>
+            <div class="player-right align flex vol">
+                <img class="invert vol" height="23px" src="assets/images/volume.svg">
+                <input class="range vol" type="range">
+            </div>
+        </div>
+        
+        <div class="player-bottom flex">
+            <div class="curr-time"></div>
+            <div class="seekbar pointer">
+                <div class="circle"></div>
+            </div>
+            <div class="duration"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
