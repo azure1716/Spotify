@@ -20,7 +20,7 @@ function formatTime(seconds) {
 
 async function getSongs(folder){
     currFolder=folder
-    let a= await fetch(`http://127.0.0.1:5500/${folder}`);
+    let a= await fetch(`/${folder}`);
     let result= await a.text()
 
     let div=document.createElement("div")
@@ -78,7 +78,7 @@ const playSong=(track,pause=false)=>{
 }
 
 async function displayAlbums(){
-    let a= await fetch(`http://127.0.0.1:5500/songs/`);
+    let a= await fetch(`/songs/`);
     let result= await a.text()
     let cardContainer=document.querySelector(".card-holder")
     let div=document.createElement("div")
@@ -92,7 +92,7 @@ async function displayAlbums(){
             let folder=e.href.split("/songs/")[1]
             console.log(folder)
             // get metadata of the folder
-            let a= await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+            let a= await fetch(`/songs/${folder}/info.json`);
             let result= await a.json()
             cardContainer.innerHTML+= `<div data-folder="${folder}" class="card pointer">
                     <img src="assets/images/cover.jpg" alt="img">
